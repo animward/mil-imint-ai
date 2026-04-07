@@ -12,7 +12,7 @@
 html,body{width:100%;height:100%;background:#060606;font-family:'Share Tech Mono',monospace;overflow:hidden;cursor:default}
 .cb{position:fixed;top:0;left:0;right:0;background:#1a1a1a;color:rgba(243,156,18,.9);font-size:9px;font-weight:700;letter-spacing:5px;text-align:center;padding:5px 0;z-index:100;border-bottom:1px solid rgba(243,156,18,.3)}
 .hc{position:fixed;width:20px;height:20px;border-color:rgba(243,156,18,.2);border-style:solid}
-.hc.tl{top:30px;left:8px;border-width:1px 0 0 1px}.hc.tr{top:30px;right:8px;border-width:1px 1px 0 0}
+.hc.tl{top:38px;left:8px;border-width:1px 0 0 1px}.hc.tr{top:38px;right:8px;border-width:1px 1px 0 0}
 .hc.bl{bottom:8px;left:8px;border-width:0 0 1px 1px}.hc.br{bottom:8px;right:8px;border-width:0 1px 1px 0}
 .gate{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;gap:16px;padding:20px}
 .node{font-size:8px;letter-spacing:4px;color:rgba(243,156,18,.4)}
@@ -27,10 +27,27 @@ html,body{width:100%;height:100%;background:#060606;font-family:'Share Tech Mono
 .status{font-size:8px;letter-spacing:2px;color:rgba(243,156,18,.4);height:12px}
 .case{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);font-size:7px;letter-spacing:2px;color:rgba(255,255,255,.08);white-space:nowrap}
 body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px);pointer-events:none;z-index:9999}
+
+.cui-banner{position:fixed;top:0;left:0;right:0;z-index:10000;background:linear-gradient(180deg,#0f1b2d 0%,#162033 100%);border-bottom:1px solid rgba(100,149,237,.15);padding:6px 0;text-align:center;font-family:'Share Tech Mono',monospace}
+.cui-banner .cui-primary{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+.cui-banner .cui-shield{font-size:11px;opacity:.7}
+.cui-banner .cui-mark{font-size:10px;font-weight:700;letter-spacing:4px;color:rgba(100,149,237,.9)}
+.cui-banner .cui-sep{color:rgba(100,149,237,.3);font-size:10px}
+.cui-banner .cui-fouo{font-size:10px;font-weight:700;letter-spacing:3px;color:rgba(200,170,80,.85)}
+.cui-banner .cui-full{font-size:8px;letter-spacing:1.5px;color:rgba(180,190,210,.35);margin-top:2px}
+
 </style>
 </head>
 <body>
-<div class="cb">CUI // FOUO — This site contains Controlled Unclassified Information and is For Official Use Only</div>
+<div class="cui-banner">
+  <div class="cui-primary">
+    <span class="cui-shield">&#128737;</span>
+    <span class="cui-mark">CONTROLLED UNCLASSIFIED INFORMATION</span>
+    <span class="cui-sep">|</span>
+    <span class="cui-fouo">FOR OFFICIAL USE ONLY</span>
+  </div>
+  <div class="cui-full">THIS SITE CONTAINS CUI &#8212; AUTHORIZED ACCESS ONLY &#8212; 32 CFR PART 2002</div>
+</div>
 <div class="hc tl"></div><div class="hc tr"></div><div class="hc bl"></div><div class="hc br"></div>
 <div class="gate">
   <div class="node">MIL // IMINT.AI</div>
