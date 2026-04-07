@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIL // IMINT.AI — IMMCON-WINTERMAKER</title>
+<meta name="description" content="Automated IMINT collection and analysis. NRO Sentient-adjacent. Overhead surveillance infrastructure. NCAGE L12Y7. Global Peacekeeping Initiative.">
+<link rel="canonical" href="https://mil.imint.ai/">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;background:#060606;font-family:'Share Tech Mono',monospace;overflow:hidden;cursor:default}
+.cb{position:fixed;top:0;left:0;right:0;background:#1a1a1a;color:rgba(243,156,18,.9);font-size:9px;font-weight:700;letter-spacing:5px;text-align:center;padding:5px 0;z-index:100;border-bottom:1px solid rgba(243,156,18,.3)}
+.hc{position:fixed;width:20px;height:20px;border-color:rgba(243,156,18,.2);border-style:solid}
+.hc.tl{top:30px;left:8px;border-width:1px 0 0 1px}.hc.tr{top:30px;right:8px;border-width:1px 1px 0 0}
+.hc.bl{bottom:8px;left:8px;border-width:0 0 1px 1px}.hc.br{bottom:8px;right:8px;border-width:0 1px 1px 0}
+.gate{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;gap:16px;padding:20px}
+.node{font-size:8px;letter-spacing:4px;color:rgba(243,156,18,.4)}
+.title{font-size:clamp(14px,3vw,22px);letter-spacing:6px;color:#eee}
+.sub{font-size:9px;letter-spacing:3px;color:rgba(243,156,18,.4)}
+.divider{width:160px;height:1px;background:rgba(243,156,18,.1);margin:6px 0}
+.field{display:flex;flex-direction:column;align-items:center;gap:7px;margin-top:8px}
+.field label{font-size:7px;letter-spacing:4px;color:rgba(243,156,18,.3)}
+.field input{background:#0a0a0a;color:rgba(243,156,18,.8);border:1px solid rgba(243,156,18,.15);padding:10px 20px;font-family:inherit;font-size:13px;letter-spacing:3px;width:260px;text-align:center;outline:none}
+.btn{background:rgba(243,156,18,.08);color:rgba(243,156,18,.6);border:1px solid rgba(243,156,18,.2);padding:10px 36px;font-family:inherit;font-size:9px;letter-spacing:5px;cursor:pointer;transition:all .2s;width:260px}
+.btn:hover{background:rgba(243,156,18,.15);border-color:rgba(243,156,18,.5);color:#fff}
+.status{font-size:8px;letter-spacing:2px;color:rgba(243,156,18,.4);height:12px}
+.case{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);font-size:7px;letter-spacing:2px;color:rgba(255,255,255,.08);white-space:nowrap}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.03) 2px,rgba(0,0,0,.03) 4px);pointer-events:none;z-index:9999}
+</style>
+</head>
+<body>
+<div class="cb">RESTRICTED // MILITARY // IMINT</div>
+<div class="hc tl"></div><div class="hc tr"></div><div class="hc bl"></div><div class="hc br"></div>
+<div class="gate">
+  <div class="node">MIL // IMINT.AI</div>
+  <div class="title">IMAGERY INTELLIGENCE</div>
+  <div class="sub">Automated IMINT collection and analysis. NRO Sentient-adjacent. Overhead surveillance infrastructure.</div>
+  <div class="divider"></div>
+  <div class="field">
+    <label>ACCESS KEY</label>
+    <input type="password" id="key" placeholder="— — — — — — — —" autocomplete="off">
+  </div>
+  <button class="btn" onclick="document.getElementById('status').textContent='\u2717 ACCESS DENIED';document.getElementById('key').value='';setTimeout(()=>document.getElementById('status').textContent='\u25CF STANDING BY',2500)">AUTHENTICATE</button>
+  <div class="status" id="status">● STANDING BY</div>
+</div>
+<div class="case">IMMCON-WINTERMAKER // mil.imint.ai</div>
+</body>
+</html>
